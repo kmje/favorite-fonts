@@ -1,0 +1,39 @@
+#header {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#logo {
+    padding: 0px 12px 0px 12px;
+    font-size: larger;
+}
+
+.right-header a{
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    color: #252323;
+    font-size: smaller;
+}
+
+.right-header{
+    float:right;
+}
+
+#light-toggle{
+    background: #fff;
+    border: solid 2px #252323;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+#dark-toggle{
+    background: #252323;
+    border: solid 2px #252323;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}

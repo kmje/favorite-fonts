@@ -6,7 +6,7 @@ Create a web app displaying fonts to demonstrate and improve upon skills. Done a
 ## To-Do (Tier 1)
 Structure
 
-- [ ] Header with minor navigation (Logo and Catalog/Featured/Articles/About link list)
+- [x] Header with minor navigation (Logo and Catalog/Featured/Articles/About link list)
 - [ ] Nav with Major navigation / page-manipulation (search, custom text, font-size, dark/light mode, grid/list mode, and reset)
 - [ ] Main section to contain the font cards
 - [ ] Font cards which display the Font Name, the font creator, the sample text, and an add button
