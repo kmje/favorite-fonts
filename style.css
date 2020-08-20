@@ -37,3 +37,13 @@
     width: 15px;
     border-radius: 50%;
 }
+
+.nav-bar {
+    display: inline-flex;
+    border: solid 1px #6e6a6a;
+
+}
+
+input {
+    border: none;
+}
