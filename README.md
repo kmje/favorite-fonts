@@ -24,7 +24,7 @@ Create a web app displaying fonts to demonstrate and improve upon skills. Done a
 - [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should reset the page as if the page were reloaded *(do not actually reset the page)*
 - [ ] On load, the page should display fonts sorted by current popularity, as returned by the Google Fonts Developer API *(see below)*
 - [ ] The search feature should be fully functional and should display matching fonts (it's up to you if you want to do this via a 'submit' or through onchange)
-- [ ] When the search input is cleared (via reset button or manually), the fonts should automaticaly display sorted by popularity again
+- [ ] When the search input is cleared (via reset button or manually), the fonts should automaticaly display sorted by poplarity again
 
 *Other*
 - [ ] Your repo needs to have a robust README.md
