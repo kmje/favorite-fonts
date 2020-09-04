@@ -1,5 +1,5 @@
 const textInput = document.querySelector('.custom-text');
-const defaultText = "To live is the rarest thing in the world. Most people exist, that is all."
+const defaultText = "Then came the night of the first falling star."
 const fontSize = document.querySelector('.font-size-control');
 const refreshButton = document.querySelector('#refresh-button');
 
