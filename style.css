@@ -62,19 +62,37 @@ input {
 .font-card-container{
     display:flex;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .column {
     flex: 1;
     padding: 10px;
-    margin: 2px;
+    margin: 5px;
     box-sizing: border-box;
-    flex: 0 0 calc(25% - 4px);
-    border: 1px solid;
+    flex: 0 0 calc(25% - 10px);
+    border-top: 1px solid;
        
 }
 
 .font-card{
     font-size: 20px;
     
+}
+
+.add-button{
+    float: right;
+    
+}
+
+.footer{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    border-top: 1px solid #d9d9d9;
+    text-align: center;
+    padding: 20px;
 }
