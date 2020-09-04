@@ -24,23 +24,28 @@
     <div class="content-container">
     <div class="nav-bar">
         <input type="text" class="search-font" placeholder="Search fonts">
-        <input type="text" class="custom-text" placeholder="Enter text">
-        <select name="font-size">
-            <option>20px</option>
-            <option>24px</option>
-            <option>32px</option>
-            <option>40px</option>
+        <input type="text" class="custom-text" placeholder="Enter text" autocomplete="off">
+        <select name="font-size" class="font-size-control">
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="32px">32px</option>
+            <option value="40px">40px</option>
         </select>
         <div id="light-toggle"></div>
         <div id="dark-toggle"></div>
         <img id ="layout-icon" src="/img/grid_on-black-18dp.svg">
         <img id ="layout-icon" src="/img/list-black-18dp.svg">
-        <img id="reload-button" src="img/refresh-black-18dp.svg">
+        <a href="#refresh" id="refresh-button">
+            <img id="reload-button" src="img/refresh-black-18dp.svg">
+        </a>
     </div>
     <div class="font-card-container">
        
-       
     </div>
     </div>
+    <footer class="footer">
+        coded by kristina | 2020 | Chingu Explorer Cohort
+    </footer>
+
     <script src="script.js"></script>
 </body>
