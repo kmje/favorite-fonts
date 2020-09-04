@@ -59,23 +59,22 @@ input {
     border: none;
 }
 
-
-.column {
-    width: 25%;
-    float: left;
-    padding: 10px 10px;
+.font-card-container{
+    display:flex;
+    flex-wrap: wrap;
 }
 
-.font-card-container {
-    display: table;
-    clear: both;
+.column {
+    flex: 1;
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    flex: 0 0 calc(25% - 4px);
+    border: 1px solid;
+       
 }
 
 .font-card{
-    box-sizing:border-box;
-    background-color: #f1f1f1;
-    display: block;
-    padding: 20px;
-    width: 250px;
-    height: 250px;
+    font-size: 20px;
+    
 }
