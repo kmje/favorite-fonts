@@ -3,11 +3,12 @@
     overflow: hidden;
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 20px;
+    font-family: Roboto;
 }
 
 #logo {
     padding: 0px 12px 0px 12px;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .content-container {
@@ -48,11 +49,22 @@
     border: solid 1px #6e6a6a;
     padding: 5px;
     border-radius: 30px;
+    width: 100%;
+}
+
+.search-font {
+    width: 40%;
 }
 
 .custom-text {
     border: 1px black;
-    border-right: 1px black;
+    border-left: solid 1px black;
+    width: 40%;
+    padding-left: 10px;
+}
+
+#light-toggle, #dark-toggle, #layout-icon{
+    cursor: pointer;
 }
 
 input {
