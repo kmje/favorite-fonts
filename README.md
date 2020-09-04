@@ -18,6 +18,6 @@ This project includes:
 
 Features to be added:
 
-[ ] Use google fonts API to have more fonts
-[ ] Light/Dark Mode
-[ ] Grid/List Toggle
+- [ ] Use google fonts API to have more fonts
+- [ ] Light/Dark Mode
+- [ ] Grid/List Toggle
