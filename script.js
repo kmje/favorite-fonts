@@ -1,5 +1,8 @@
 const textInput = document.querySelector('.custom-text');
-const defaultText = "This sentence is the default sentence."
+const defaultText = "To live is the rarest thing in the world. Most people exist, that is all."
+const fontSize = document.querySelector('.font-size-control');
+const refreshButton = document.querySelector('#refresh-button');
+
 
 function customText(){
     const cardText = document.querySelectorAll('.font-text');
@@ -12,11 +15,17 @@ function customText(){
 
 function createCards(){
     const fontArray = ["Lora", "Tangerine", "Inconsolata", "Roboto", "Raleway", "Krona One", "Dosis", "Lobster", "Abel", "Caveat"];
+      
     const cards = fontArray.map((card) => {
+        console.log(card.family);
+        
         return `
         <span class="column">
             <span class="font-card">
-                <h2>${card}</h2>
+                <span style="font-size:16px; font-family:Roboto">${card}</span>
+                <a href = "#">
+                    <img class="add-button" src="/img/add_circle_outline-black-18dp.svg">
+                </a>
                 <p style="font-family:${card}" class="font-text">${defaultText}</p>
             </span>
             
@@ -24,11 +33,52 @@ function createCards(){
         `
     }).join('');
     
-    loadCards.innerHTML = cards;
+    loadCards.innerHTML = cards; 
+    
+}
+
+function changeFontSize(){
+    if(this.value == "20px"){
+       changeFontTo("20px");
+    }
+    else if(this.value == "24px"){
+        changeFontTo("24px");
+     }    
+    else if(this.value == "32px"){
+        changeFontTo("32px");
+     }
+    else if(this.value == "40px"){
+        changeFontTo("40px");
+     }
+    else {
+        console.log("Error: Not an available font size.")
+    }
+}
+
+function changeFontTo(fontSize){
+    const fontText = document.querySelectorAll('.font-text');
+    
+    fontText.forEach(fontCard => {
+        fontCard.style["font-size"] = fontSize;
+    }) 
+}
+
+function refreshPage(){
+    const fontText = document.querySelectorAll('.font-text');
+    
+    fontText.forEach(fontCard => {
+        fontCard.style["font-size"] = "20px";
+        fontCard.innerHTML = defaultText;
+    })
+    
+    //TODO: clear text box on reset
+    //document.getElementById('custom-text')
+   
 }
 
 const loadCards = document.querySelector('.font-card-container');
-window.onload = createCards;
-
+window.onload = createCards();
+fontSize.addEventListener('change', changeFontSize);
 textInput.addEventListener('change', customText);
 textInput.addEventListener('keyup', customText);
+refreshButton.addEventListener('click', refreshPage);
